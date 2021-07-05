@@ -91,10 +91,12 @@ li{
 .home{
     display: flex;
     background: url("../images/bg-2.jpg")fixed no-repeat center/cover;
+    z-index: 1;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
 }
 .home .max-width{
     margin: auto 0 auto 40px;
@@ -507,4 +509,12 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
+}
+.particles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
 }
